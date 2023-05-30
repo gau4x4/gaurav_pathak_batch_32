@@ -14,52 +14,37 @@
   </head>
   <body>
     <div class="main-container">
-      <h1>Naive Custom DropDown</h1>
-      <div class="gpSelect">
-        <div class="gpHeader">
-          <label for="" class="gpSelectedData" data-placeholder=""
-            >Please Select</label
-          >
-          <span class="gpDownArrow"></span>
-        </div>
-        <div class="gpDropper">
-          <table class="gpDropTable">
-            <tbody>
-              <tr>
-                <td>
-                  <span class="gpLeftMark"></span>
-                  <label for="" class="gpCellText">Option 1</label>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="gpLeftMark"></span>
-                  <label for="" class="gpCellText">Option 2</label>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="gpLeftMark"></span>
-                  <label for="" class="gpCellText">Option 3</label>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="gpLeftMark"></span>
-                  <label for="" class="gpCellText">Option 4</label>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="gpLeftMark"></span>
-                  <label for="" class="gpCellText">Option 5</label>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <h1>Naive Custom Radio</h1>
+      <div class="gpRadio">
+        <input
+          id="gpRadioId1"
+          type="radio"
+          name="option"
+          class="gpRadioInput"
+        />
+        <label for="gpRadioId1" class="gpCheckDot"></label>
+        <span>Select 1</span>
+      </div>
+      <div class="gpRadio">
+        <input
+          id="gpRadioId2"
+          type="radio"
+          name="option"
+          class="gpRadioInput"
+        />
+        <label for="gpRadioId2" class="gpCheckDot"></label>
+        <span>Select 2</span>
+      </div>
+      <div class="gpRadio">
+        <input
+          id="gpRadioId3"
+          type="radio"
+          name="option"
+          class="gpRadioInput"
+        />
+        <label for="gpRadioId3" class="gpCheckDot"></label>
+        <span>Select 3</span>
       </div>
     </div>
-    <script src="script.js"></script>
   </body>
 </html>
