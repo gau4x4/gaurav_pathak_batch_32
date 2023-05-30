@@ -59,3 +59,22 @@
   cursor: pointer;
   padding: 0.7rem 0.5rem;
 }
+.gpDropTable tbody tr td:hover {
+  background-color: #f2f2f2;
+}
+.gpDropTable tbody tr td label {
+  vertical-align: middle;
+}
+.gpDropTable tbody tr td:hover span {
+  transform: scale(1.2);
+}
+.gpLeftMark {
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iNTEycHgiIGlkPSJMYXllcl8xIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBmaWxsPSIjMDBiMzAwIj48cGF0aCBkPSJNMzIyLjcsMTI4LjRMNDIzLDIzMy40YzYsNS44LDksMTMuNyw5LDIyLjRjMCw4LjctMywxNi41LTksMjIuNEwzMjIuNywzODMuNmMtMTEuOSwxMi41LTMxLjMsMTIuNS00My4yLDAgIGMtMTEuOS0xMi41LTExLjktMzIuNywwLTQ1LjJsNDguMi01MC40aC0yMTdDOTMuNywyODgsODAsMjczLjcsODAsMjU2YzAtMTcuNywxMy43LTMyLDMwLjYtMzJoMjE3bC00OC4yLTUwLjQgIGMtMTEuOS0xMi41LTExLjktMzIuNywwLTQ1LjJDMjkxLjQsMTE1LjksMzEwLjcsMTE1LjksMzIyLjcsMTI4LjR6Ii8+PC9zdmc+")
+    no-repeat center;
+  display: inline-block;
+  background-size: 20px;
+  transition: all ease-in-out 0.2s;
+}
