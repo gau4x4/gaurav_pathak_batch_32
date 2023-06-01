@@ -17,12 +17,22 @@
         type: "Playing & Watching Cricket",
         achievement:
           "CII Inter Organization Cricket Tournament Winner 2018,2019",
-        sportType: "Athletic",
+        hobbyType: "Sports",
+      },
+      {
+        type: "Reading about Aeronautics/Aerospace & Astrophysics",
+        achievement: "Nothing Yet",
+        hobbyType: "Reading",
+      },
+      {
+        type: "Reading about Political Science & Religion",
+        achievement: "Nothing Yet",
+        hobbyType: "Reading",
       },
       {
         type: "Soccer",
         achievement: "Started playing in 2022",
-        sportType: "Athletic",
+        hobbyType: "Sports",
       },
     ],
   };
