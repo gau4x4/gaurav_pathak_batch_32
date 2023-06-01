@@ -12,11 +12,16 @@
   flex-direction: column;
 }
 .resumeMainHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   height: 70px;
   background: #3b5998;
   align-items: center;
-  padding: 0 2em;
+  padding: 0 1em;
+  z-index: 2;
 }
 .resumeHeading {
   font: 2.3em/1 "Roboto";
@@ -24,12 +29,16 @@
 }
 .resumeMainPageBox {
   display: flex;
+  padding: 70px 0 0 30%;
 }
 
 .resumeMainAside {
-  flex-basis: 30%;
+  position: fixed;
+  left: 0;
+  width: 30%;
+  height: 100%;
   background-color: #06d6a0;
-  height: calc(100vh - 70px);
+  /* height: calc(100vh - 70px); */
 }
 .resumeLeftMenu ul {
   list-style: none;
@@ -49,16 +58,16 @@
   cursor: pointer;
 }
 .resumeMainSection {
-  flex-basis: 70%;
+  /* flex-basis: 70%; */
 }
 .resumeMainSection img {
   border-radius: 50%;
-  max-width: 300px;
-  max-height: 300px;
+  height: 250px;
+  aspect-ratio: 1/1;
   margin: 10px 0 0 10px;
 }
 .resumeMainPlaceholder {
-  min-height: 60vh;
+  /* min-height: 60vh; */
   background-color: black;
   color: #fff;
   padding: 20px;
