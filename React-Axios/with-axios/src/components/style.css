@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  color: #fff;
+  width: 50%;
+}
+ul > li {
+  padding: 0.5em 1em;
+  border: 1px solid #fff;
+  margin: 0.7em 0;
+  background: #21897e;
+}
+ul > li > h1 {
+  font-size: 14px;
+  font-weight: normal;
+}

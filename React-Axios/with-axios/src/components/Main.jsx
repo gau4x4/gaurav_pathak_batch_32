@@ -8,25 +8,31 @@ function Main() {
   const [posts, setPost] = React.useState(null);
 
   React.useEffect(() => {
-    axios.get(baseURL).then((response) => {
-      setPost(response.data);
-    });
+    // axios.get(baseURL).then((response) => {
+    //   setPost(response.data);
+    // });
+    const getPostsFromAPI = async function () {
+      const dataFromAPI = await fetch(baseURL);
+      const data = await dataFromAPI.json();
+      setPost(data);
+    };
+    getPostsFromAPI();
   }, []);
 
   if (!posts) return null;
-
+  const addDom = function () {
+    return posts.map(function (post, index) {
+      return (
+        <li key={index}>
+          <h1>{post.title}</h1>
+          <p>{post.body}</p>
+        </li>
+      );
+    });
+  };
   return (
     <div>
-      <ul>
-        {posts.map(function (post, index) {
-          return (
-            <li key={index}>
-              <h1>{post.title}</h1>
-              <p>{post.body}</p>
-            </li>
-          );
-        })}
-      </ul>
+      <ul>{addDom()}</ul>
     </div>
   );
 }

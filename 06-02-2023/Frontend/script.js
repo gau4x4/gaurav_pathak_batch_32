@@ -35,7 +35,7 @@
       return this.hobbies;
     },
   };
-  console.log(gaurav.getHobbies());
-  console.log(gaurav.setHobbies("History"));
-  console.log(gaurav.deleteHobbies("Soccer"));
+  console.table(gaurav.getHobbies());
+  console.table(gaurav.setHobbies("History"));
+  console.table(gaurav.deleteHobbies("Soccer"));
 })();
