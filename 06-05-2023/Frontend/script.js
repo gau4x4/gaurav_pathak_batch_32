@@ -1,24 +1,3 @@
-// console.table("helulow");
-
-// function resolveAfter2Seconds() {
-//   return new Promise((resolve) => {
-//     setTimeout(() => {
-//       resolve("resolved");
-//     }, 2000);
-//   });
-// }
-
-// async function asyncCall() {
-//   console.log("calling");
-//   const result = await resolveAfter2Seconds();
-//   console.log(result);
-//   // Expected output: "resolved"
-// }
-
-// asyncCall();
-
-// object_var.constructor.prototype == Object.create(name of the object)
-
 const formHandler = function () {
   const labelObj = {
     fname: "First Name",
@@ -58,11 +37,16 @@ const formHandler = function () {
   }
 };
 
-const primary_button = document.querySelector(".primary_button");
-primary_button.addEventListener("click", function (e) {
+document.querySelector("form").addEventListener("submit", function (e) {
   e.preventDefault();
   formHandler();
 });
+
+// const primary_button = document.querySelector(".primary_button");
+// function handleFormFromButton(e) {
+//   e.preventDefault();
+//   formHandler();
+// }
 // const handleForm = function (e) {
 //   e.preventDefault();
 // };
