@@ -20,6 +20,15 @@
 // object_var.constructor.prototype == Object.create(name of the object)
 
 const formHandler = function () {
+  const labelObj = {
+    fname: "First Name",
+    lname: "Last Name",
+    dob: "Date of Birth",
+    email: "Email Id",
+    phone: "Phone Number",
+    college: "College Name",
+    company: "Company Name",
+  };
   const fname = document.querySelector("[name=fname]").value;
   const lname = document.querySelector("[name=lname]").value;
   const dob = document.querySelector("[name=dob]").value;
@@ -28,8 +37,8 @@ const formHandler = function () {
   const college = document.querySelector("[name=college]").value;
   const company = document.querySelector("[name=company]").value;
   const obj = {};
-  obj.fName = fname;
-  obj.lName = lname;
+  obj.fname = fname;
+  obj.lname = lname;
   obj.dob = dob;
   obj.email = email;
   obj.phone = phone;
@@ -41,7 +50,7 @@ const formHandler = function () {
     const li = document.createElement("li");
     const label = document.createElement("label");
     const p = document.createElement("p");
-    label.innerText = key;
+    label.innerText = labelObj[key];
     p.innerText = value;
     li.appendChild(label);
     li.appendChild(p);
