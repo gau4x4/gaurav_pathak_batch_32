@@ -15,42 +15,45 @@
     </style> -->
     <h1>Assignment:06/05</h1>
 
-    <div class="mainContainer">
-      <div class="innerContainer">
-        <div class="row">
-          <label for="fname" class="mainLabel">First Name:</label>
-          <input type="text" class="inputText" name="fname" id="fname" />
+    <form onsubmit="handleForm()">
+      <div class="mainContainer">
+        <div class="innerContainer">
+          <div class="row">
+            <label for="fname" class="mainLabel">First Name:</label>
+            <input type="text" class="inputText" name="fname" id="fname" />
+          </div>
+          <div class="row">
+            <label for="lname" class="mainLabel">Last Name:</label>
+            <input type="text" class="inputText" name="lname" id="lname" />
+          </div>
+          <div class="row">
+            <label for="dob" class="mainLabel">DOB:</label>
+            <input type="date" class="inputText" name="dob" id="dob" />
+          </div>
+          <div class="row">
+            <label for="email" class="mainLabel">Email:</label>
+            <input type="email" class="inputText" name="email" id="email" />
+          </div>
+          <div class="row">
+            <label for="phone" class="mainLabel">Phone Number:</label>
+            <input type="tel" class="inputText" name="phone" id="phone" />
+          </div>
+          <div class="row">
+            <label for="college" class="mainLabel">College:</label>
+            <input type="text" class="inputText" name="college" id="college" />
+          </div>
+          <div class="row">
+            <label for="company" class="mainLabel">Company:</label>
+            <input type="text" class="inputText" name="company" id="company" />
+          </div>
         </div>
-        <div class="row">
-          <label for="lname" class="mainLabel">Last Name:</label>
-          <input type="text" class="inputText" name="lname" id="lname" />
-        </div>
-        <div class="row">
-          <label for="dob" class="mainLabel">DOB:</label>
-          <input type="date" class="inputText" name="dob" id="dob" />
-        </div>
-        <div class="row">
-          <label for="email" class="mainLabel">Email:</label>
-          <input type="email" class="inputText" name="email" id="email" />
-        </div>
-        <div class="row">
-          <label for="phone" class="mainLabel">Phone Number:</label>
-          <input type="tel" class="inputText" name="phone" id="phone" />
-        </div>
-        <div class="row">
-          <label for="college" class="mainLabel">College:</label>
-          <input type="text" class="inputText" name="college" id="college" />
-        </div>
-        <div class="row">
-          <label for="company" class="mainLabel">Company:</label>
-          <input type="text" class="inputText" name="company" id="company" />
+        <div class="mainDisplayBox">
+          <ul class="ul-dataDom"></ul>
         </div>
       </div>
-      <div class="mainDisplayBox">
-        <ul class="ul-dataDom"></ul>
-      </div>
-    </div>
-    <button class="primary_button">Click Me</button>
+      <button class="primary_button" type="submit">Click Me</button>
+      <button class="primary_button" type="reset">Reset Me</button>
+    </form>
 
     <script src="script.js"></script>
   </body>

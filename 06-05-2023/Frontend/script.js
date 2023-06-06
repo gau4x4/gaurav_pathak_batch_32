@@ -59,6 +59,10 @@ const formHandler = function () {
 };
 
 const primary_button = document.querySelector(".primary_button");
-primary_button.addEventListener("click", function () {
+primary_button.addEventListener("click", function (e) {
+  e.preventDefault();
   formHandler();
 });
+// const handleForm = function (e) {
+//   e.preventDefault();
+// };
