@@ -63,4 +63,8 @@
 ul > li {
   display: flex;
   gap: 1em;
+  padding: 1em;
+}
+ul > li > label {
+  flex-basis: 40%;
 }
