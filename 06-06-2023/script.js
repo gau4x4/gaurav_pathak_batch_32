@@ -5,17 +5,37 @@ const formHandler = function () {
     dob: "Date of Birth",
     email: "Email Id",
     phone: "Phone Number",
-    college: "College Name",
-    company: "Company Name",
+    gender: "Gender",
+    hobbies: "Hobbies",
   };
+  // const fname = document.querySelector("[name=fname]").value;
+  // const lname = document.querySelector("[name=lname]").value;
+  // const dob = document.querySelector("[name=dob]").value;
+  // const email = document.querySelector("[name=email]").value;
+  // const phone = document.querySelector("[name=phone]").value;
+  // const gender = document.querySelectorAll("[name=gender]");
+  // const hobbies = document.querySelector("[name=hobbies]");
+  const gender = document.querySelectorAll("[name=gender]");
+  const hobbies = document.querySelectorAll("[name=hobbies]");
+  let selectedGender = "";
+  gender.forEach((gen) => {
+    if (gen.checked) selectedGender = gen.value;
+  });
+
+  let selectedHobbies = [];
+  hobbies.forEach((hobbies) => {
+    if (hobbies.checked) selectedHobbies.push(hobbies.value);
+  });
+  console.log(selectedHobbies);
+
   const obj = {
     fname: document.querySelector("[name=fname]").value,
     lname: document.querySelector("[name=lname]").value,
     dob: document.querySelector("[name=dob]").value,
     email: document.querySelector("[name=email]").value,
     phone: document.querySelector("[name=phone]").value,
-    college: document.querySelector("[name=college]").value,
-    company: document.querySelector("[name=company]").value,
+    gender: selectedGender,
+    hobbies: selectedHobbies,
   };
 
   const ul = document.querySelector(".ul-dataDom");
