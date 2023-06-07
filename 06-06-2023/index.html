@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>06-05-2023</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
   </head>
   <body>
     <!-- <style contenteditable style="display: block">
@@ -39,67 +40,74 @@
             <input type="tel" class="inputText" name="phone" id="phone" />
           </div>
           <div class="row">
-            <div class="col">
-              <label for="male">Male:</label>
+            <div class="gpRadio">
               <input
                 type="radio"
-                class="inputText"
+                class="gpRadioInput"
                 name="gender"
                 id="male"
                 value="Male"
               />
+              <label for="male" class="gpCheckDot"></label>
+              <span>Male</span>
             </div>
-            <div class="col">
-              <label for="male">Female:</label>
+            <div class="gpRadio">
               <input
                 type="radio"
-                class="inputText"
+                class="gpRadioInput"
                 name="gender"
                 id="female"
                 value="Female"
               />
+              <label for="female" class="gpCheckDot"></label>
+              <span>Female</span>
             </div>
-            <div class="col">
-              <label for="male">Do not want to say:</label>
+            <div class="gpRadio">
               <input
                 type="radio"
-                class="inputText"
+                class="gpRadioInput"
                 name="gender"
                 id="dnws"
                 value="Do not want to say"
               />
+              <label for="dnws" class="gpCheckDot"></label>
+              <span>Do not want to say</span>
             </div>
           </div>
           <div class="row">
-            <div class="col">
-              <label for="h1">Cricket</label>
+            <div class="gpCheckBox">
               <input
                 type="checkbox"
-                class="inputText"
+                class="gpCheckInput"
                 name="hobbies"
                 id="h1"
                 value="Cricket"
               />
+              <label for="h1" class="gpCheckMark"></label>
+              <span>Cricket</span>
             </div>
-            <div class="col">
-              <label for="h2">Movies</label>
+            <div class="gpCheckBox">
               <input
                 type="checkbox"
-                class="inputText"
+                class="gpCheckInput"
                 name="hobbies"
                 id="h2"
                 value="Movies"
               />
+              <label for="h2" class="gpCheckMark"></label>
+              <span>Movies</span>
             </div>
-            <div class="col">
-              <label for="h3">Travelling</label>
+
+            <div class="gpCheckBox">
               <input
                 type="checkbox"
-                class="inputText"
+                class="gpCheckInput"
                 name="hobbies"
                 id="h3"
                 value="Travelling"
               />
+              <label for="h3" class="gpCheckMark"></label>
+              <span>Travelling</span>
             </div>
           </div>
         </div>
