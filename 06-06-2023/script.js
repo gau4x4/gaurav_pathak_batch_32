@@ -1,3 +1,5 @@
+const profileForm = document.querySelector(".profileForm");
+
 const formHandler = function () {
   const labelObj = {
     fname: "First Name",
@@ -8,15 +10,9 @@ const formHandler = function () {
     gender: "Gender",
     hobbies: "Hobbies",
   };
-  // const fname = document.querySelector("[name=fname]").value;
-  // const lname = document.querySelector("[name=lname]").value;
-  // const dob = document.querySelector("[name=dob]").value;
-  // const email = document.querySelector("[name=email]").value;
-  // const phone = document.querySelector("[name=phone]").value;
-  // const gender = document.querySelectorAll("[name=gender]");
-  // const hobbies = document.querySelector("[name=hobbies]");
-  const gender = document.querySelectorAll("[name=gender]");
-  const hobbies = document.querySelectorAll("[name=hobbies]");
+
+  const gender = profileForm.elements["gender"];
+  const hobbies = profileForm.elements["hobbies"];
   let selectedGender = "";
   gender.forEach((gen) => {
     if (gen.checked) selectedGender = gen.value;
@@ -26,14 +22,12 @@ const formHandler = function () {
   hobbies.forEach((hobbies) => {
     if (hobbies.checked) selectedHobbies.push(hobbies.value);
   });
-  console.log(selectedHobbies);
-
   const obj = {
-    fname: document.querySelector("[name=fname]").value,
-    lname: document.querySelector("[name=lname]").value,
-    dob: document.querySelector("[name=dob]").value,
-    email: document.querySelector("[name=email]").value,
-    phone: document.querySelector("[name=phone]").value,
+    fname: profileForm.elements["fname"].value,
+    lname: profileForm.elements["lname"].value,
+    dob: profileForm.elements["dob"].value,
+    email: profileForm.elements["email"].value,
+    phone: profileForm.elements["phone"].value,
     gender: selectedGender,
     hobbies: selectedHobbies,
   };
@@ -52,16 +46,7 @@ const formHandler = function () {
   }
 };
 
-document.querySelector("form").addEventListener("submit", function (e) {
+profileForm.addEventListener("submit", function (e) {
   e.preventDefault();
   formHandler();
 });
-
-// const primary_button = document.querySelector(".primary_button");
-// function handleFormFromButton(e) {
-//   e.preventDefault();
-//   formHandler();
-// }
-// const handleForm = function (e) {
-//   e.preventDefault();
-// };
