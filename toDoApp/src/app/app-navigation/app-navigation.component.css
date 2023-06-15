@@ -1,0 +1,42 @@
+.mainPageAside {
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 3em);
+    background-color: #AA4465;
+}
+
+.mainPageAside>h2 {
+    margin: 1em 0;
+    color: #fff;
+}
+
+.mainNevigationList {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    width: 100%;
+}
+
+.mainNevigationList>li {
+    padding: 1em;
+    background-color: #fff;
+    color: #AA4465;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+
+}
+
+.mainNevigationList>li:not(:last-child) {
+    border-bottom: 1px solid #AA4465;
+}
+
+.mainNevigationList>li>span {
+    display: block;
+}
+
+.mainNevigationList>li:hover {
+    background-color: #AA4465;
+    color: #fff;
+}

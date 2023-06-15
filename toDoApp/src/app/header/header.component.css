@@ -1,0 +1,38 @@
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.mainHeader {
+    display: flex;
+    align-items: center;
+    height: 4em;
+    background-color: #3b5998;
+    justify-content: space-between;
+    padding: 0 .7em;
+    color: #fff;
+    position: relative;
+}
+
+.headerRightContent {
+    gap: 1em;
+    min-width: 26ch;
+}
+
+.headerRightContent>span {
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+.headerRightContent>span:hover {
+    transform: scale(1.2);
+}
+
+.headerCenterContent>input {
+    height: 3em;
+    width: 15em;
+    border-radius: 3em;
+    padding: 0 0.8em;
+}

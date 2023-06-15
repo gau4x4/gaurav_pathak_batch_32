@@ -1,0 +1,20 @@
+<!-- <input type="text" [(ngModel)]="name" *ngIf="someBool"/>
+ <p>{{name}}</p>
+<p #tempRef></p>
+<button (click)="someHandler()">Click Me</button>
+<button (click)="someBool=!someBool">Click Me Again</button>
+ -->
+<header class="mainHeader">
+    <h2 class="headerBannerName">Gaurav Pathak</h2>
+    <div class="headerCenterContent flex-center">
+        <input type="text" class="headerSearchBar" placeholder="Type to search" />
+    </div>
+
+    <div class="headerRightContent flex-center">
+        <span class="headerProfile">Profile</span>
+        <span>/</span>
+        <span class="headerContact">Contact</span>
+        <span>/</span>
+        <span class="headerLogin" (click)="loginHandler()">{{userSession}}</span>
+    </div>
+</header>
