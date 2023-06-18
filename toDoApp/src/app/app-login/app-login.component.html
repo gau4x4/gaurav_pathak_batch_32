@@ -1,0 +1,89 @@
+<div class="login-container flex-center-column" *ngIf="showLogin">
+    <form flex-center-column>
+        <h2 class="main-heading">Login Here</h2>
+        <div class="row-flex">
+            <label for="username" class="input-label">Username</label>
+            <input type="text" class="form-input" id="username" [(ngModel)]="username" placeholder="Username"
+                name="username">
+        </div>
+        <div class="row-flex">
+            <label for="password" class="input-label">Password</label>
+            <input type="password" class="form-input" id="password" [(ngModel)]="password" placeholder="Password"
+                name="password">
+        </div>
+        <div class="row-flex">
+            <button (click)="gotoSignup()" class="main-secondary-button">Signup</button>
+            <button type="reset" class="main-secondary-button">Reset</button>
+
+            <button type="submit" (click)="handleLogin()" class="main-primary-button">Login</button>
+        </div>
+    </form>
+</div>
+<div class="signup-container flex-center-column" *ngIf="showSignup">
+    <h2 class="main-heading">Register Here</h2>
+
+    <form flex-center-column>
+        <div class="row-flex">
+            <label for="fname" class="input-label">First Name</label>
+            <input type="text" class="form-input" id="fname" [(ngModel)]="fname" name="fname">
+        </div>
+        <div class="row-flex">
+            <label for="lname" class="input-label">Last Name</label>
+            <input type="text" class="form-input" id="lname" [(ngModel)]="lname" name="lname">
+        </div>
+        <div class="row-flex">
+            <label for="email" class="input-label">Email</label>
+            <input type="email" class="form-input" id="email" [(ngModel)]="email" name="email">
+        </div>
+        <div class="row-flex">
+            <label for="password-signup" class="input-label">Password</label>
+            <input type="password" class="form-input" id="password-signup" [(ngModel)]="password_signup"
+                name="password_signup">
+        </div>
+        <div class="row-flex">
+            <label for="phone" class="input-label">Phone</label>
+            <input type="phone" class="form-input" id="phone" [(ngModel)]="phone" name="phone">
+        </div>
+        <div class="row-flex">
+            <label for="dob" class="input-label">Date of Birth</label>
+            <input type="date" class="form-input" id="dob" [(ngModel)]="dob" name="dob">
+        </div>
+        <div class="row-flex">
+            <button (click)="gotoLogin()" class="main-secondary-button">Login</button>
+            <button class="main-secondary-button">Reset</button>
+            <button (click)="handleSignup()" class="main-primary-button">Signup</button>
+        </div>
+    </form>
+</div>
+<div class="profile-container flex-center-column" *ngIf="showProfile">
+    <h2 class="main-heading">User Profile Details</h2>
+
+    <table class="main-table">
+        <tbody>
+            <tr>
+                <th>First Name</th>
+                <td>{{fname}}</td>
+            </tr>
+            <tr>
+                <th>Last Name</th>
+                <td>{{lname}}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{email}}</td>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td>{{phone}}</td>
+            </tr>
+            <tr>
+                <th>Date of Birth</th>
+                <td>{{dob}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="row-flex">
+        <button (click)="gotoLogin()" class="main-secondary-button">Login</button>
+        <button (click)="gotoSignup()" class="main-primary-button">Signup</button>
+    </div>
+</div>

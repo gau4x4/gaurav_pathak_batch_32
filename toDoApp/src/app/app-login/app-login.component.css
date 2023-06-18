@@ -1,0 +1,77 @@
+.login-container,
+.signup-container,
+.profile-container {
+    padding: 2em;
+    width: 80vw;
+}
+
+.flex-center-column>form {
+    width: 60%;
+}
+
+.flex-center-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-heading {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.row-flex {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.input-label {
+    font-size: 1em;
+    flex-basis: 30%;
+}
+
+.form-input {
+    color: #333;
+    font-size: 1.2rem;
+    padding: 1em 2em;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #2b5998;
+    flex-basis: 70%;
+    display: block;
+    transition: all 0.3s;
+}
+
+.main-primary-button {
+    background-color: #2b5998;
+    border: 1px solid #2b5998;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.main-secondary-button {
+    background-color: #fff;
+    border: 1px solid #2b5998;
+    color: #2b5998;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.main-table {
+    width: 50%;
+}
+
+.main-table tr>* {
+    text-align: left;
+    padding: 1.5em 1em;
+}

@@ -1,5 +1,7 @@
 <section>
-  <!-- <h1 class="headingName">Hola! Welcome to the Future.</h1> -->
-  <app-header></app-header>
-  <app-navigation></app-navigation>
+  <app-header (handleContactProp)="onContactHandled($event)"></app-header>
+  <div class="flex-center-row">
+    <app-navigation></app-navigation>
+    <app-login></app-login>
+  </div>
 </section>

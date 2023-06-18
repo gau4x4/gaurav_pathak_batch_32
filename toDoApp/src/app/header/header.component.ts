@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, AfterViewInit, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit, ElementRef, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -13,12 +13,16 @@ export class HeaderComponent implements AfterViewInit {
   // someHandler() {
   //   this.tempRef.nativeElement.innerText = this.name;
   // }
+  @Output() handleContactProp = new EventEmitter<String>();
   userSession: String = "Login";
   ngAfterViewInit() {
     // console.log(this.tempRef)
   }
   loginHandler(): void {
     this.userSession = this.userSession === "Login" ? "Logout" : "Login";
+  }
+  handleContact(): void {
+    this.handleContactProp.emit(this.userSession);
   }
 
 }
